@@ -1,0 +1,13 @@
+name: test wf
+on: 
+  push
+run-name: ${{github.actor}}
+jobs:
+  First-Job-with-Checkout:
+    runs-on: ubuntu-latest
+    steps:
+    - name: sample test 
+      run: echo "this job was automatically triggered by a ${{ github.event_name }} event"
+    - name: checkout the repo
+      uses: actions/checkout@v4
+      
