@@ -10,4 +10,7 @@ jobs:
       run: echo "this job was automatically triggered by a ${{ github.event_name }} event"
     - name: checkout the repo
       uses: actions/checkout@v4
+    - name: list the files in the repo
+      run: |
+        ls ${{github.workspace}}
       
