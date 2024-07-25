@@ -11,4 +11,5 @@ jobs:
       run: |
         cat README.md
         mkdir test-folder
+        ls
  
