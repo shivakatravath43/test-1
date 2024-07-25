@@ -10,4 +10,5 @@ jobs:
     - name: list the files in the repo
       run: |
         cat README.md
+        ls
  
