@@ -7,3 +7,8 @@ jobs:
     steps: 
     - name: check out the code
       uses: actions/checkout@v4
+    - name: list the files in the repo
+      run: |
+        cat README.md
+        ls 
+        pwd
